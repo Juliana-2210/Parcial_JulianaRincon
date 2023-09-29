@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <title>Registro De Personas</title>
+</head>
+<body onload="Departaments()">
+<h2 class="col-md-12">Registro de Datos de Empleados</h2>
+<br>
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="Name" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="Name">
+  </div>
+  <div class="col-md-6">
+    <label for="LastName" class="form-label">Apellido</label>
+    <input type="text" class="form-control" id="LastName" >
+  </div>
+  <div class="col-12">
+    <label for="Salary" class="form-label">Salario</label>
+    <input type="text" class="form-control" id="Salary">
+  </div>
+  <div class="col-md-6">
+    <label for="department" class="form-label">Departamento</label>
+    <select id="department" class="form-select">
+      <option selected value="0">Seleccione el departamento ...</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="city" class="form-label">Ciudad</label>
+    <select id="city" class="form-select">
+      <option selected value="0">Seleccione la ciudad...</option>
+    </select>
+  </div>
+
+</form>
+<br>
+<div class="col-12">
+  <button id="btn" class="btn btn-primary">Registrar</button>
+</div>
+<br>
+
+<table class="col-md-12">
+  <thead>
+  <tr>
+    <th colspan="5" id="tableData"></th>
+  </tr>
+
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Departamento</th>
+    <th>Ciudad</th>
+  </tr>
+  </thead>
+
+  <tbody id="tBody">
+
+  </tbody>
+</table>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+</html>
